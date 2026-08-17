@@ -55,7 +55,6 @@ for i in range(iterations):
 
 
     # Calculate Loss
-
     loss = binary_entropy(y, y_hat)
 
     loss_history.append(loss)
@@ -67,7 +66,7 @@ for i in range(iterations):
     dz = y_hat - y
 
     # Gradient of weights
-    dW = (x.T @ dz) / len(x)
+    dW = (x.T @ dz) / len(x)                #taking average gradient
 
 
     # Update weights
@@ -79,7 +78,7 @@ for i in range(iterations):
         print("Iteration:", i, "Loss:", loss)
 
 
-
+# prediction
 z = x @ w
 y_hat = sigmoid(z)
 
