@@ -60,7 +60,7 @@ def backward(x,y, W1,b1, W2,b2, W3,b3):
     db1 = delta1
 
     # Printing Gradients
-    print("\n=========== DEEP NETWORK ===========")
+    print("\n===== DEEP NETWORK =====")
 
     print("\nPrediction")
     print(a3)
